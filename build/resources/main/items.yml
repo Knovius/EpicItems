@@ -1,0 +1,55 @@
+example:
+  cooldown: 5 #In Seconds
+  cancelEvents: true #Stops player from placing / crafting with item.
+  consume: true
+  item:
+    material: FEATHER
+    amount: 1
+    customModelData: 001 # 001 Is the code for no customModelData since its not working ;-;
+    enchanted: true
+    name: "&c&lEnchanted Feather &7(Right Click)"
+    lore:
+       - "&r"
+       - "&7Click for a cookie!"
+  commands:
+    byconsole:
+       - "give %player% cookie 1"
+    byplayer:
+       - "say hello me!"
+    delayed:
+      delayByConsole:  0
+      byConsole:
+        - ""
+        - ""
+      delayByPlayer: 0
+      byPlayer:
+        - ""
+        - ""
+
+flytime:
+  cooldown: 3600
+  cancelEvents: true
+  consume: true
+  item:
+    material: FEATHER
+    amount: 1
+    customModelData: 1
+    enchanted: true
+    name: "&eLimited Flight Voucher &7(Right Click)"
+    lore:
+      - "&r"
+      - "&7Click for the permission to fly!"
+    commands:
+      byconsole:
+        - "lp user %player% permission set essentials.fly true"
+      byplayer:
+        - ""
+      delayed:
+        delayByConsole: 300 #5mins
+        byConsole:
+          - "lp user %player% permission set essentials.fly false"
+          - ""
+        delayByPlayer: 0
+        byPlayer:
+          - ""
+          - ""

@@ -1,0 +1,8 @@
+name: EpicItems
+version: '${version}'
+main: me.knovius.epicitems.EpicItems
+api-version: 1.16
+commands:
+  epicitems:
+    description: null
+    aliases: [ei, epicitem]
